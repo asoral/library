@@ -17,6 +17,7 @@
    "options": "Book"
   },
   {
+   "fetch_from": "book.author_name",
    "fieldname": "author",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -26,7 +27,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-02-09 17:05:37.338952",
+ "modified": "2022-02-10 16:26:37.670931",
  "modified_by": "Administrator",
  "module": "Library",
  "name": "Book Details",

@@ -9,6 +9,7 @@
   "student_full_name",
   "posing_date",
   "column_break_3",
+  "type",
   "from_date",
   "to_date",
   "book_deatils_section",
@@ -67,12 +68,18 @@
    "fieldtype": "Table",
    "label": "Books",
    "options": "Book Details"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Issue\nReturn"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-02-09 17:04:48.795289",
+ "modified": "2022-02-10 17:39:34.849945",
  "modified_by": "Administrator",
  "module": "Library",
  "name": "Transaction",
