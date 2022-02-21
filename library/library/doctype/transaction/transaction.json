@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "autoname": "format:{student_full_name}-{#####}",
  "creation": "2022-02-09 17:00:26.082105",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -79,7 +80,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-02-10 17:39:34.849945",
+ "modified": "2022-02-21 13:33:58.956043",
  "modified_by": "Administrator",
  "module": "Library",
  "name": "Transaction",

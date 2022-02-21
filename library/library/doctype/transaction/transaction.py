@@ -48,6 +48,12 @@ class Transaction(Document):
 	
 	def on_submit(self):
 		self.handle_book_count()
+	
+	@frappe.whitelist()
+	def get_full_name(self,docname):
+		print("###################"*10)
+		print(docname)
+		return docname
 
 	#def on_cancel(self):
 	# def after_insert(self):
