@@ -14,7 +14,7 @@ def get_columns(filters):
             "label": "Student ID",
             "fieldtype": "Data",
             "fieldname": "student_id",
-            "width": 200,
+            "width": 700,
         },
         {
             "label": "Student Name",
@@ -31,16 +31,16 @@ def get_columns(filters):
     ]
 
 def get_data(filters):
-	fil = {}
-	if filters.get("student"):
-		fil['student'] = filters.get("student")
-	all_data = frappe.get_all("Transaction",fil,["*"])
-	
-	data = []
-	for i in all_data:
-		d = {}
-		d['transaction'] = i.get("name")
-		d['student_id'] = i.get("student")
-		d['student_name'] = i.get("student_full_name")
-		data.append(d)
-	return data
+    fil = {}
+    if filters.get("student"):
+        fil['student'] = filters.get("student")
+    all_data = frappe.get_all("Transaction",fil,["*"])
+
+    data = []
+    for i in all_data:
+        temp = {}
+        temp['transaction'] = i.get("name")
+        temp['student_id'] = i.get("student")
+        temp['student_name'] = i.get("student_full_name")
+        data.append(temp)
+    return data

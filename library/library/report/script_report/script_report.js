@@ -11,12 +11,6 @@ frappe.query_reports["Script Report"] = {
 			options: "Student",
 			// reqd: 1,
 			default: "",
-		},
-		{
-			fieldname: "from_date",
-			label: __("From Date"),
-            fieldtype: "Date",
-			
-		},
+		}
 	]
 };
